@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
             $table->text('nombre');
             $table->text('apellido');
+            $table->integer('edad');
+            $table->integer('ci');
+            $table->text('correo');
+            $table->date('fecha_nac');
+            $table->text('estado');
             $table->timestamps();
         });
     }

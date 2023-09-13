@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -9,9 +11,14 @@ class Cliente extends Model
 {
     use HasFactory;
     public $table = 'clientes';
-    public$columnas=[
+    protected $fillable=[
         'id',
         'nombre',
-        'apellido'
+        'apellido',
+        'edad',
+        'ci',
+        'correo',
+        'fecha_nac',
+        'estado'
     ];
 }

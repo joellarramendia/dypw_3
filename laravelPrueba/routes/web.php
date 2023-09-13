@@ -21,3 +21,9 @@ Route::get('/', function () {
 });
 
 Route::get('clientes/index',[ClienteController::class,'index']);
+
+Route::get('/crear', [ClienteController::class, 'crear']);
+
+Route::get('clientes/formulario', [ClienteController::class, 'formulario']);
+
+Route::post('/crear', [ClienteController::class, 'crear']);
